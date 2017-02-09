@@ -1,0 +1,11 @@
+project(IntroductoryTutorial)
+set(CXX_STANDARD 11)
+
+cmake_minimum_required(VERSION 2.8)
+aux_source_directory(. SRC_LIST)
+add_executable(${PROJECT_NAME} main.cpp)
+add_executable(useful_macors useful_macros.cpp)
+add_executable(shared_pointers shared_pointers.cpp)
+add_executable(distributions distributions.cpp)
+add_executable(random_generator random_generator.cpp)
+add_executable(functions functions.cpp)

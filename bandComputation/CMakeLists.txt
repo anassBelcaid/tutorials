@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.9)
 project(bandStorage)
-set(src bandstor.cpp spdband.cpp)
+set(src bandstor.cpp spdband.cpp spdbandf.cpp)
 set(CMAKE_CXX_STANDARD 11)
 add_executable( bandStorage 01_band_storage.cpp ${src})
 add_executable( symmetricPositive 02_symmetric_positive.cpp ${src})
+add_executable( cholesky_decomposition 03_Cholesky_spd.cpp ${src})

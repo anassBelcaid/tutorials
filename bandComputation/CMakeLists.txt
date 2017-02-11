@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.9)
+project(bandStorage)
+set(src bandstor.cpp spdband.cpp)
+set(CMAKE_CXX_STANDARD 11)
+add_executable( bandStorage 01_band_storage.cpp ${src})

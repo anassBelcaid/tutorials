@@ -31,5 +31,9 @@ int main(int argc, char* argv[])
     cout<<residu[i]<<"\t";
     cout<<endl;
 
+    //Testing the product
+    cout<<endl;
+    SPDBandMatrix hess=M*M;
+    cout<<hess<<endl;
     return 0;
 }

@@ -18,6 +18,7 @@ public:
     //Redefinition of the accesser
     double& operator()(const int, const int);
     vector<double> operator*(const vector<double>&);
+    SPDBandMatrix operator*(SPDBandMatrix & B);
     friend
     ostream & operator<<(ostream & , SPDBandMatrix &);
 

@@ -76,3 +76,29 @@ vector<double> SPDBandMatrix::operator*(const vector<double>& x)
     }
     return y;
 }
+
+ SPDBandMatrix SPDBandMatrix::operator*( SPDBandMatrix & B)
+{
+    int n=order();
+    int band=bandWidth();
+    int Dband=2*band;       //double the band
+    SPDBandMatrix C(n,Dband);
+
+    for(auto i=0;i<n;i++)
+    {
+        for(auto j=MAX(0,i-Dband);j<=MIN(n-1,i+Dband);j++)
+        {
+            //cout<<"i="<<i<<" j="<<j<<endl;
+            //computing C(i,j)
+
+            double S=0.0;
+            for(int k=MAX(0,i-band); k<=MIN(n-1,i+band) ;k++)
+            {
+                S+=(*this)(i,k)*B(k,j);
+            }
+            C(i,j)=S;
+        }
+    }
+    return C;
+
+}

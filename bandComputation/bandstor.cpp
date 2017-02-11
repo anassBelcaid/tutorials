@@ -1,4 +1,5 @@
 #include "bandstor.h"
+#include <iostream>
 using namespace std;
 
 bandStorage::bandStorage(const int order)
@@ -33,7 +34,6 @@ const vector<double>& bandStorage::diag(const int location) const
 double & bandStorage::operator()(const int i, const int j)
 {
     static double zero = 0.0;
-
       //checking if we're in the band
      if (j <= (i+upperBand) && i <= (j+lowerBand))
         if (i<=j) // upper triangle

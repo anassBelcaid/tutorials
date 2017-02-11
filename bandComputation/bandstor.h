@@ -13,7 +13,7 @@ inline int MIN(int i, int j) { return (i<j ? i : j);}
 
 class bandStorage
 {
-private:
+protected:
     int n;
     int upperBand;
     int lowerBand;

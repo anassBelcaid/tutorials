@@ -1,0 +1,4 @@
+#ifndef FIXTURETESTS_H
+#define FIXTURETESTS_H
+
+#endif // FIXTURETESTS_H

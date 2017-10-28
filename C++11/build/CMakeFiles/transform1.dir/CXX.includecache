@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anassbelcaid/github/tutorial/C++11/transform_01.cpp
+iostream
+-
+algorithm
+-
+numeric
+-
+vector
+-
+iterator
+-
+

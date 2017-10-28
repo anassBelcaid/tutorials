@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anassbelcaid/github/tutorial/C++11/default_delete.cpp
+iostream
+-
+algorithm
+-
+vector
+-
+array
+-
+

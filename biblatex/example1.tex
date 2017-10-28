@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+%font specification
+\setromanfont{Times New Roman}
+  \setsansfont{Arial}
+  \setmonofont[Color={0019D4}]{Courier New}
+\usepackage[citestyle=authoryear,sorting=ynt]{biblatex}
+\addbibresource{bibliographie.bib}
+\begin{document}
+  In this document I will test the package \textbf{biblatex}.\\
+  Here is a simple citation \cite{golub1996matrix}. and here is another one \cite[see][page 12]{GEMAN84}.
+
+  Here is a citation using \textbf{parencite}, \parencite{HoPa95}.\\
+
+  This one will appear in the \textbf{footnote} \footcite{Feng2015}.\\
+
+  And finally we will test \emph{textcite} ,\textcite{HoPa95}
+
+
+
+
+  %printing the bibliography
+  \printbibliography
+\end{document}

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anassbelcaid/github/tutorial/C++11/algorithms_03.cpp
+iostream
+-
+algorithm
+-
+iterator
+-
+string
+-
+unordered_map
+-
+

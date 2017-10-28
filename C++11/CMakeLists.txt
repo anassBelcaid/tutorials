@@ -1,6 +1,6 @@
 #Tutorial on C++ 11 new features
 cmake_minimum_required(VERSION 3.1)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 project(C11)
 
@@ -11,4 +11,11 @@ add_executable(typeInference type_inference.cpp)
 add_executable(enums enums.cpp)
 add_executable(static_assertion static_assertion.cpp)
 add_executable(default_delete default_delete.cpp)
-add_executable(symmetric_diff symmetric_diff.cpp)
+add_executable(shared_pointers shared_pointers.cpp)
+add_executable(algorithms1 algorithms_01.cpp)
+add_executable(algorithms2 algorithms_02.cpp)
+add_executable(algorithms3 algorithms_03.cpp)
+add_executable(algorithms4 algorithms_04.cpp)
+add_executable(accumulate1 accumulate_01.cpp)
+add_executable(transform1 transform_01.cpp)
+add_executable (functional functional_01.cpp)

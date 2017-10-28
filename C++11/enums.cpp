@@ -16,8 +16,8 @@ int main(int argc, char const *argv[])
 	/* sinice enum are just types they will be printed*/
 	Day d=Monday;
 	Month m=January;
-	if(m==d)
-		cout<<"practically monday equal January!!!!"<<endl;
+    //if(m==d)
+        //cout<<"practically monday equal January!!!!"<<endl;
 
 	return 0;
 }

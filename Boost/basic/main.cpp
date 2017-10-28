@@ -1,10 +1,8 @@
 #include <iostream>
+#include <boost/regex.hpp>
 
-using namespace std;
-
-int main()
-{
-    cout << "Hello World!" << endl;
-    return 0;
+int main(){
+  boost::regex  begin_with_capital("[A-Z].*");
+  std::cout << boost::regex_match("MacBook Pro", begin_with_capital) << std::endl;
+  std::cout << boost::regex_match("iPad Air", begin_with_capital) << std::endl;
 }
-
